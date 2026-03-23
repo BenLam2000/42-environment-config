@@ -1,3 +1,5 @@
+# file path: ~/.config/systemd/user/
+
 [Unit]
 Description=Pomodoro timer
 # to start this service manually:
