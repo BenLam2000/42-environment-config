@@ -1,0 +1,11 @@
+# file path: ~/.ssh/config
+
+Host vogsphere.42iskandarputeri.edu.my
+    HostName vogsphere.42iskandarputeri.edu.my
+    User git
+    IdentityFile ~/.ssh/42pc_vogsphere_key
+
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/42pc_github_key

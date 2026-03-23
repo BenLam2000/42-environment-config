@@ -1,0 +1,6 @@
+# file path: ~/.ssh/config
+
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/benpc_github_key
