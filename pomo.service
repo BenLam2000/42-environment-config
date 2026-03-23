@@ -1,0 +1,11 @@
+[Unit]
+Description=Pomodoro timer
+# to start this service manually:
+# systemctl --user start/stop pomo.timer
+# logs:
+# journalctl --user -u pomo
+
+[Service]
+ExecStart=/bin/bash /home/ben-lam/.automation_scripts/pomo.sh
+Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus

@@ -1,0 +1,16 @@
+[Unit]
+Description=Pomodoro every 30 min after login
+
+[Timer]
+# how long to run after this service is first started
+OnActiveSec=30min
+# after first service start, regular interval for activation
+OnUnitActiveSec=30min
+# by default runs .service with same name
+# Unit=something-else.service
+# to enable timer:
+# systemctl --user enable --now pomo.timer
+
+[Install]
+# default target that represents a fully started user session / login
+#WantedBy=default.target
