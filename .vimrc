@@ -5,7 +5,7 @@ set relativenumber number
 
 " 42 user credentials
 let g:user42 = 'belam'
-let g:mail42 = 'belam@student.42iskandarputeri.edu.my'
+let g:mail42 = 'belam@student.42kl.edu.my'
 
 " bindings
 let mapleader = ' '
