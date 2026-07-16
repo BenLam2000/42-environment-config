@@ -19,10 +19,9 @@ function open_slot() {
 }
 
 ###################### PATH SETTINGS ##########################################
-if [[ "$PATH" != *"$HOME/.local/bin"* ]]; then
-    export PATH="$PATH:$HOME/.local/bin"
+if [[ "$PATH" != "$HOME/.local/bin"* ]]; then
+	export PATH="$HOME/.local/bin:$PATH"
 fi
-
 ###############################################################################
 
 
@@ -43,3 +42,4 @@ setopt EXTENDED_HISTORY       # Save timestamps
 setopt INC_APPEND_HISTORY     # Save commands immediately after exe each command instead of after closing session
 
 ##############################################################################
+
